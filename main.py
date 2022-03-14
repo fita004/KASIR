@@ -7,24 +7,45 @@ def fungsimakanan():
    global porsi
    global mkn
    print ("\n----------------- Menu Makanan -----------------")
-   print("1. Nasi Goreng - Rp 15000")
-   print("2. Soto - Rp 9000")
-   print("3. Mie Ayam - Rp 11000")
+   print("1. Roti Bakar - Rp. 10,000")
+   print("2. Pisang Goreng - Rp. 10,000")
+   print("3. Onion Ring - Rp. 8,000")
+   print("4. Chicken Fingers -  Rp. 12,000")
+   print("5. French Fries - Rp. 12,000")
+   print("6. Sandwich - Rp. 12,000")
+   print("7. Spaghetti Bolognese - Rp. 20,000")
+  
    nomor=int(input("Masukan Pilihan: "))
    porsi= int(input("Berapa Porsi: "))
    
    if nomor==1:
-       totalmkn=porsi*15000
-       print (porsi," porsi Nasi Goreng Telur = Rp", totalmkn)
-       mkn=("Nasi Goreng")
+       totalmkn=porsi*10000
+       print (porsi," porsi Roti Bakar = Rp", totalmkn)
+       mkn=("Roti Bakar")
    elif nomor==2:
-       totalmkn=porsi*9000
-       print (porsi," porsi Soto = Rp", totalmkn)
-       mkn=("Soto")
+       totalmkn=porsi*10000
+       print (porsi," porsi Pisang Goreng = Rp", totalmkn)
+       mkn=("Pisang Goreng")
    elif nomor==3:
-       totalmkn=porsi*11000
-       print (porsi, " porsi Mie Ayam = Rp", totalmkn)
-       mkn=("Mie Ayam")
+       totalmkn=porsi*8000
+       print (porsi, " porsi Onion Ring = Rp", totalmkn)
+       mkn=("Onion Ring")
+   elif nomor==4:
+       totalmkn=porsi*12000
+       print (porsi, " porsi Chicken Fingers = Rp", totalmkn)
+       mkn=("Chicken Fingers")
+   elif nomor==5:
+       totalmkn=porsi*12000
+       print (porsi, " porsi French Fries = Rp", totalmkn)
+       mkn=("French Fries")
+   elif nomor==6:
+       totalmkn=porsi*12000
+       print (porsi, " porsi Sandwich = Rp", totalmkn)
+       mkn=("Sandwich")
+   elif nomor==7:
+       totalmkn=porsi*20000
+       print (porsi, " porsi Spaghetti Bolognese = Rp", totalmkn)
+       mkn=("Spaghetti Bolognese")
    else:
       print("Pilihan tidak ada, silahkan masukan lagi!!")
       fungsimakanan()
@@ -34,20 +55,20 @@ def fungsiminuman():
    global mnm
    global gelas
    print("\n----------------- Menu Minuman -----------------")
-   print("1. Es teh - Rp 2000")
-   print("2. Es jeruk - Rp 3500")
-   print("3. Es kopi - Rp 4000")
+   print("1. Ice Tea - Rp. 5,000")
+   print("2. Orange Juice - Rp. 5,000")
+   print("3. Es kopi - Rp. 4000")
    nomor=int(input("Masukan Pilihan: "))
    gelas= int(input("Berapa Gelas: "))
 
    if nomor==1:
-       totalmnm=gelas*2000
-       print (gelas," Es Teh = Rp", totalmnm)
-       mnm=(" Gelas Es Teh")
+       totalmnm=gelas*5000
+       print (gelas," Ice Tea = Rp", totalmnm)
+       mnm=(" Gelas Ice Tea")
    elif nomor==2:
-       totalmnm=gelas*3500
-       print (gelas, " Gelas Es Jeruk = Rp", totalmnm)
-       mnm=("Es Jeruk")
+       totalmnm=gelas*5000
+       print (gelas, " Gelas Orange Juice = Rp", totalmnm)
+       mnm=("Orange Juice")
    elif nomor==3:
        totalmnm=gelas*4000
        print (gelas, " Gelas Es Kopi = Rp", totalmnm)
