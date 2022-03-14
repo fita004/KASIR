@@ -55,26 +55,43 @@ def fungsiminuman():
    global mnm
    global gelas
    print("\n----------------- Menu Minuman -----------------")
-   print("1. Ice Tea - Rp. 5,000")
-   print("2. Orange Juice - Rp. 5,000")
-   print("3. Es kopi - Rp. 4000")
+   print("1. Ice Tea - Rp. 10,000")
+   print("2. Orange Juice - Rp. 10,000")
+   print("3. Thai Tea - Rp. 10,000")
+   print("4. Dalgona Coffee - Rp. 10,000")
+   print("5. Cappucino -  Rp. 10,000")
+   print("6. Americano - Rp. 7,000")
+  
    nomor=int(input("Masukan Pilihan: "))
    gelas= int(input("Berapa Gelas: "))
 
    if nomor==1:
-       totalmnm=gelas*5000
+       totalmnm=gelas*10000
        print (gelas," Ice Tea = Rp", totalmnm)
        mnm=(" Gelas Ice Tea")
    elif nomor==2:
-       totalmnm=gelas*5000
+       totalmnm=gelas*10000
        print (gelas, " Gelas Orange Juice = Rp", totalmnm)
        mnm=("Orange Juice")
    elif nomor==3:
-       totalmnm=gelas*4000
-       print (gelas, " Gelas Es Kopi = Rp", totalmnm)
-       mnm=("Es Kopi")
+       totalmnm=gelas*10000
+       print (gelas, " Thai Tea = Rp", totalmnm)
+       mnm=("Thai Tea")
+   elif nomor==4:
+       totalmnm=gelas*10000
+       print (gelas, " Dalgona Coffee = Rp", totalmnm)
+       mnm=("Dalgona Coffee")
+   elif nomor==5:
+       totalmnm=gelas*10000
+       print (gelas, " Cappucino = Rp", totalmnm)
+       mnm=("Cappucino")
+   elif nomor==6:
+       totalmnm=gelas*7000
+       print (gelas, " Americano = Rp", totalmnm)
+       mnm=("Americano")
+ 
    else:
-      print("Pilihan tidak ada, silahkan masukan lagi!!")
+      print("Pilihan tidak ada, silahkan masukan data lagi")
       fungsiminuman()
 
 fungsimakanan()
